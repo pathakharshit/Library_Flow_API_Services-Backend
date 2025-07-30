@@ -1,32 +1,30 @@
 # 📚 Library_Flow_API_Services-Backend
 
-A RESTful backend system to manage library operations such as book inventory, issue and return management, fine calculation, and secure access controls. Built using Spring Boot and designed for modularity, scalability, and role-based authorization.
+
+A **learning-phase**, beginner-level Spring Boot REST API to manage basic library operations: book inventory, issuing/returning books, and calculating fines. Built without advanced security or testing frameworks as part of core learning.
+
+---
+
+## ✨ Highlights
+
+- A simple CRUD backend powered by Spring Boot and MySQL   
+- Focused on REST principles and database interaction via JPA  
 
 ---
 
 ## 🚀 Features
 
-- 📖 Book inventory management (Add, View, Update, Delete)
-- 🙋 Issue and return functionality
-- 💸 Fine calculation for overdue returns
-- 🔐 Role-based access: Admin & User
-- 🔑 Secure login and JWT-based authentication
-- 📂 JPA & Hibernate for ORM and database management
-- 🧪 JUnit-based unit testing for reliable modules
+- 📖 **Book Management**: Add, update, delete, and view books  
+- 📗 **Issue & Return Flow**: Users can issue or return books  
+- 💰 **Fine Calculator**: Calculates fines for overdue books automatically  
+- 🧠 Minimal setup—ideal for learning purposes
 
 ---
 
-## 🧑‍💻 Tech Stack
+## 🛠️ Tech Stack
 
-| Layer        | Technology            |
-|--------------|------------------------|
-| Language     | Java                   |
-| Backend      | Spring Boot            |
-| Security     | Spring Security, JWT   |
-| ORM          | Hibernate, JPA         |
-| Database     | MySQL                  |
-| Build Tool   | Maven                  |
-| Testing      | JUnit                  |
-| Tools        | Git, GitHub, Postman   |
-
----
+- **Language**: Java  
+- **Framework**: Spring Boot  
+- **ORM**: Spring Data JPA (Hibernate)  
+- **Database**: MySQL  
+- **Build Tool**: Maven
