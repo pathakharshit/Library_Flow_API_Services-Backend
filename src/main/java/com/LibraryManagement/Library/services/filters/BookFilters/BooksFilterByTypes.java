@@ -1,0 +1,23 @@
+package com.LibraryManagement.Library.services.filters.BookFilters;
+
+import com.LibraryManagement.Library.constraint.BookType;
+import com.LibraryManagement.Library.constraint.FilterOperator;
+import com.LibraryManagement.Library.model.Book;
+import com.LibraryManagement.Library.repositories.BookRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
+
+@Component
+public class BooksFilterByTypes implements FilterBooks {
+    @Autowired
+    private BookRepository bookRepository;
+    @Override
+    public List<Book> filterAllBooks(FilterOperator operator, String value) {
+        if(operator != FilterOperator.EQUALS) {
+            throw new IllegalArgumentException("Operator is not matching");
+        }
+        return bookRepository.findByBookType(BookType.fromString(value));
+    }
+}
